@@ -1,7 +1,7 @@
 # Livebook Starter
 
 ## 🏗️ Prerequisites
-[elixir-starter](https://github.com/rakshans1/elixir-starter#%EF%B8%8F-prerequisites]
+  Follow from [elixir-starter](https://github.com/rakshans1/elixir-starter#%EF%B8%8F-prerequisites)
 
 
 Setup 
