@@ -16,14 +16,13 @@ let
     (with darwin.apple_sdk.frameworks; [ CoreFoundation CoreServices ]);
 
   hooks = ''
-    # this allows mix to work on the local directory
-    mkdir -p .nix-mix .nix-hex
+    mkdir -p .nix-mix .nix-hex .livebook
     export MIX_HOME=$PWD/.nix-mix
     export HEX_HOME=$PWD/.nix-hex
-    # make hex from Nixpkgs available
-    # `mix local.hex` will install hex into MIX_HOME and should take precedence
+
     export MIX_PATH="${beam.packages.erlangR25.hex}/lib/erlang/lib/hex/ebin"
-    export PATH=$MIX_HOME/bin:$HEX_HOME/bin:$PATH
+    export PATH=${erlangR25}/bin:$MIX_HOME/bin:$HEX_HOME/bin:$MIX_HOME/escripts:bin:$PATH
+
     export LANG=C.UTF-8
     # keep your shell history in iex
     export ERL_AFLAGS="-kernel shell_history enabled"

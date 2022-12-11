@@ -1,10 +1,15 @@
-# Elixir Starter
+# Livebook Starter
 
 ## 🏗️ Prerequisites
+[elixir-starter](https://github.com/rakshans1/elixir-starter#%EF%B8%8F-prerequisites]
 
-- [nix](https://nix.dev/tutorials/install-nix)
-- [direnv](https://direnv.net/docs/installation.html)
 
-Setup direnv with [shell](https://direnv.net/docs/hook.html)
+Setup 
+```sh
+setup
+```
 
-Run `direnv allow`
+Run Livebook 
+```sh
+run
+```

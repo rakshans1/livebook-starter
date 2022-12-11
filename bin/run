@@ -1,0 +1,5 @@
+#!/bin/bash
+export LIVEBOOK_HOME=$(pwd)/books
+export LIVEBOOK_DATA_PATH=$(pwd)/.livebook
+
+livebook server --no-token
