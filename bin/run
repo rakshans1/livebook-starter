@@ -1,5 +1,6 @@
 #!/bin/bash
 export LIVEBOOK_HOME=$(pwd)/books
 export LIVEBOOK_DATA_PATH=$(pwd)/.livebook
+export LIVEBOOK_TOKEN_ENABLED=false
 
-livebook server --no-token
+livebook server
